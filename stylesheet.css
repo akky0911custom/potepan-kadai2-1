@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 時間表示 */
+#time {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+/*ボタン*/
+button {
+  line-height: 65px;
+  padding: 0 25px;
+  color: black;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+button:hover {
+    background-color: silver;
+}
+
+button:disabled {
+    color: gray;
+    background-color: silver;
+}
