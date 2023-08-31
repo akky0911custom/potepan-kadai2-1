@@ -14,13 +14,7 @@
      
   // スタート
   $('#start').click(function() {
-      // 000:00:00:00から開始
-      msec = 0;
-      sec = 0;
-      min = 0;
-      hour = 0;
       
-      $('#time').html('000:00:00:00');
       timer = setInterval(countup, 10);
       
       $(this).prop('disabled', true);
@@ -33,7 +27,7 @@
       clearInterval(timer);
       
       $(this).prop('disabled', true);
-      $('#reset').prop('disabled', false);
+      $('#start,#reset').prop('disabled', false);
   });
   
   // リセット
